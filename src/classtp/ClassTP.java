@@ -14,11 +14,11 @@ public class ClassTP {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+    Pneu p1 = new Pneu(205, 55, 16, "été");
+    Voiture v1 = new Voiture("Peugeot", "208", 2021, 14500, p1);
+
+    System.out.println("Voiture 1 : " + v1.marque + " " + v1.modele + " " + v1.annee + " " + v1.prix + " " + "Largeur :" + " " +  p1.largeur + " " + "Hauteur : " + " " + p1.hauteur + " " + "Diamètre : " + " " + p1.diametre + " " + "Type : " + " " + p1.type);
 
 }
 
     }
-    
-    
-}
