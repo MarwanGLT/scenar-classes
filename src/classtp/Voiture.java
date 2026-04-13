@@ -16,6 +16,14 @@ public class Voiture {
     double prix;
     Pneu pneu;
 
+public void afficherDescription() {
+    System.out.println("Marque : " + marque);
+    System.out.println("Modèle : " + modele);
+    System.out.println("Année : " + annee);
+    System.out.println("Prix : " + prix + " €");
+}
+
+
     public Voiture(String marque, String modele, int annee, double prix, Pneu pneu) {
     this.marque = marque;
     this.modele = modele;
@@ -24,5 +32,6 @@ public class Voiture {
     this.pneu = pneu;
     }
 
+    
 
 }
