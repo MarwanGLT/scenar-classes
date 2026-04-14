@@ -17,7 +17,11 @@ public class ClassTP {
     Pneu p1 = new Pneu(205, 55, 16, "été");
     Voiture v1 = new Voiture("Peugeot", "208", 2021, 14500, p1);
 
-v1.appliquerReduction10();
+       v1.afficherDescription ();
+    
+       v1.appliquerReduction(0.9);
+       v1.appliquerReduction(0.8);
+       v1.appliquerReduction(0.7);
 
 }
 

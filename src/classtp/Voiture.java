@@ -21,6 +21,7 @@ public void afficherDescription() {
     System.out.println("Modèle : " + modele);
     System.out.println("Année : " + annee);
     System.out.println("Prix : " + prix + " €");
+    System.out.println("Age : " + calculAge());
 }
 
 
@@ -33,10 +34,15 @@ public void afficherDescription() {
     }
     
 
-        public void appliquerReduction10(){
-        prix = prix*0.9;
+        public void appliquerReduction(double pourcentage){
+        prix = prix*pourcentage;
         System.out.println("Le prix après réduction est de : "+prix);
 }
+        
+    public int calculAge(){
+        int Age = 2026 - annee;
+        return(Age);
+    }
 
 
 }
