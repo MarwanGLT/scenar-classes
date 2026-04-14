@@ -31,7 +31,12 @@ public void afficherDescription() {
     this.prix = prix;
     this.pneu = pneu;
     }
-
     
+
+        public void appliquerReduction10(){
+        prix = prix*0.9;
+        System.out.println("Le prix après réduction est de : "+prix);
+}
+
 
 }
